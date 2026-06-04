@@ -1,0 +1,56 @@
+{
+	"nav": {
+		"projects": "Projects",
+		"experience": "Experience",
+		"skills": "Skills",
+		"contact": "Contact"
+	},
+	"hero": {
+		"available": "Available for new projects",
+		"description": "FullStack Developer focused on product, scalability, and code that delivers real value.",
+		"cta1": "View projects →",
+		"cta2": "Get in touch"
+	},
+	"projects": {
+		"label": "// 02 — projects",
+		"title": "What I've built",
+		"subtitle": "Company projects and personal initiatives — from MVP to production.",
+		"sectionCompanies": "Companies",
+		"sectionGithub": "GitHub",
+		"viewAll": "view all ↗",
+		"private": "private",
+		"site": "site ↗"
+	},
+	"timeline": {
+		"label": "// 03 — experience",
+		"title": "Timeline",
+		"subtitle": "Professional journey — from first job to the present.",
+		"current": "current",
+		"concurrent": "concurrent",
+		"expand": "click to see details ↓",
+		"close": "close ↑"
+	},
+	"skills": {
+		"label": "// 04 — skills",
+		"title": "Tech stack",
+		"subtitle": "Technologies I use daily — from front-end to cloud.",
+		"items": "technologies"
+	},
+	"contact": {
+		"label": "// 05 — contact",
+		"title": "Let's talk?",
+		"subtitle": "Open to opportunities, freelance projects, and great tech conversations.",
+		"preferEmail": "Prefer to send an email?",
+		"emailReply": "I'll reply within 24 hours.",
+		"sendEmail": "Send email →",
+		"access": "Open ↗",
+		"cards": {
+			"linkedin": {
+				"label": "LinkedIn",
+				"desc": "Professional profile and career"
+			},
+			"github": { "label": "GitHub", "desc": "Repositories and contributions" },
+			"whatsapp": { "label": "WhatsApp", "desc": "Quick response for contact" }
+		}
+	}
+}

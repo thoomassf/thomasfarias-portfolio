@@ -1,0 +1,59 @@
+{
+	"nav": {
+		"projects": "Projetos",
+		"experience": "Experiência",
+		"skills": "Skills",
+		"contact": "Contato"
+	},
+	"hero": {
+		"available": "Disponível para novos projetos",
+		"description": "FullStack Developer com foco em produto, escalabilidade e código que entrega valor real.",
+		"cta1": "Ver projetos →",
+		"cta2": "Entre em contato"
+	},
+	"projects": {
+		"label": "// 02 — projetos",
+		"title": "O que eu construí",
+		"subtitle": "Projetos em empresas e iniciativas pessoais — do MVP ao produto em produção.",
+		"sectionCompanies": "Empresas",
+		"sectionGithub": "GitHub",
+		"viewAll": "ver todos ↗",
+		"private": "privado",
+		"site": "site ↗"
+	},
+	"timeline": {
+		"label": "// 03 — experiência",
+		"title": "Linha do tempo",
+		"subtitle": "Trajetória profissional — do primeiro emprego até o momento atual.",
+		"current": "atual",
+		"concurrent": "simultâneo",
+		"expand": "clique para ver detalhes ↓",
+		"close": "fechar ↑"
+	},
+	"skills": {
+		"label": "// 04 — skills",
+		"title": "Stack técnico",
+		"subtitle": "Tecnologias que uso no dia a dia — do front-end ao cloud.",
+		"items": "tecnologias"
+	},
+	"contact": {
+		"label": "// 05 — contato",
+		"title": "Vamos conversar?",
+		"subtitle": "Aberto a oportunidades, projetos freelance e boas conversas sobre tecnologia.",
+		"preferEmail": "Prefere enviar um email?",
+		"emailReply": "Respondo em até 24 horas.",
+		"sendEmail": "Enviar email →",
+		"access": "Acessar ↗",
+		"cards": {
+			"linkedin": {
+				"label": "LinkedIn",
+				"desc": "Perfil profissional e trajetória"
+			},
+			"github": { "label": "GitHub", "desc": "Repositórios e contribuições" },
+			"whatsapp": {
+				"label": "WhatsApp",
+				"desc": "Resposta rápida para contato"
+			}
+		}
+	}
+}

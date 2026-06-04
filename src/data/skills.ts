@@ -1,0 +1,47 @@
+export const SKILLS: Record<string, string[]> = {
+	"Front-end": [
+		"React.js",
+		"Next.js 12–14",
+		"TypeScript",
+		"TailwindCSS",
+		"Chakra UI",
+		"Material UI",
+		"React Query",
+		"React Router",
+		"Micro Frontends",
+		"Module Federation",
+	],
+	"Back-end & APIs": [
+		"Django",
+		"FastAPI",
+		"Node.js",
+		"NestJS",
+		"Fastify",
+		"Java Quarkus",
+		"Python",
+		"REST",
+		"Microserviços",
+		"Clean Architecture",
+	],
+	"DevOps & Cloud": [
+		"Docker",
+		"AWS EC2",
+		"AWS S3",
+		"AWS IAM",
+		"GitHub Actions",
+		"GitLab CI/CD",
+		"Azure DevOps",
+		"GitFlow",
+		"Pulumi",
+	],
+	Testes: ["Cypress", "Vitest", "Jest", "React Testing Library"],
+	"Bancos de Dados": ["PostgreSQL", "MySQL", "MongoDB"],
+};
+
+export const SKILL_ICONS: Record<string, string> = {
+	"Front-end": "◈",
+	"Back-end & APIs": "◉",
+	"DevOps & Cloud": "⬡",
+	Testes: "◎",
+	"Bancos de Dados": "◆",
+};
