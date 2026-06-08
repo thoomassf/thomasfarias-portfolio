@@ -13,7 +13,7 @@ export function App() {
 		<I18nextProvider i18n={i18n}>
 			<ThemeProvider>
 				<Nav />
-				<main className="max-w-6xl mx-auto px-10">
+				<main className="max-w-400 mx-auto">
 					<Hero />
 					<Projects />
 					<Timeline />

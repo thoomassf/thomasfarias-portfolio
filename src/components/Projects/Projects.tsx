@@ -4,8 +4,7 @@ import { CompanyCard } from "./CompanyCard";
 import { GitHubCard } from "./GitHubCard";
 import { COMPANY_PROJECTS } from "../../data/companyProjects";
 import { useGitHubRepos } from "../../hooks/useGitHubRepos";
-
-const GITHUB_PROFILE_URL = "https://github.com/thoomassf";
+import { GITHUB_URL } from "@/constants";
 
 function SkeletonCard() {
 	return (
@@ -19,10 +18,10 @@ function SkeletonCard() {
 
 export function Projects() {
 	const { t } = useTranslation();
-	const { repos, loading, error } = useGitHubRepos();
+	// const { repos, loading, error } = useGitHubRepos();
 
 	return (
-		<section id="projetos" className="section">
+		<section id="projetos" className="">
 			<div>
 				<SectionHeader
 					label={t("projects.label")}
@@ -30,7 +29,6 @@ export function Projects() {
 					subtitle={t("projects.subtitle")}
 				/>
 
-				{/* Company projects */}
 				<div className="mb-18">
 					<div className="flex items-center gap-3 mb-7">
 						<span className="font-mono text-xs text-text-3 uppercase">
@@ -45,7 +43,6 @@ export function Projects() {
 					</div>
 				</div>
 
-				{/* GitHub projects */}
 				<div>
 					<div className="flex items-center gap-3 mb-7">
 						<span className="font-mono text-xs text-text-3 uppercase">
@@ -53,7 +50,7 @@ export function Projects() {
 						</span>
 						<div className="flex-1 h-px bg-border" />
 						<a
-							href={GITHUB_PROFILE_URL}
+							href={GITHUB_URL}
 							target="_blank"
 							rel="noopener noreferrer"
 							className="font-mono text-xs text-accent bg-accent-dim border border-accent/18 py-1 px-3 rounded-md transition-colors duration-200 shrink-0"
@@ -62,7 +59,7 @@ export function Projects() {
 						</a>
 					</div>
 
-					{error && (
+					{/* {error && (
 						<p className="font-mono text-xs text-text-3 mb-4">{error}</p>
 					)}
 
@@ -74,7 +71,7 @@ export function Projects() {
 							: repos.map((repo, i) => (
 									<GitHubCard key={repo.id} repo={repo} delay={i * 0.08} />
 								))}
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</section>

@@ -1,55 +1,13 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useTheme } from "../../contexts/ThemeContext";
-import { useScrollSpy } from "../../hooks/useScrollSpy";
-
-const GITHUB_URL = "https://github.com/thoomassf";
-
-function SunIcon() {
-	return (
-		<svg
-			aria-hidden="true"
-			width="15"
-			height="15"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="currentColor"
-			strokeWidth="2"
-			strokeLinecap="round"
-		>
-			<circle cx="12" cy="12" r="5" />
-			<line x1="12" y1="1" x2="12" y2="3" />
-			<line x1="12" y1="21" x2="12" y2="23" />
-			<line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-			<line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-			<line x1="1" y1="12" x2="3" y2="12" />
-			<line x1="21" y1="12" x2="23" y2="12" />
-			<line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-			<line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-		</svg>
-	);
-}
-
-function MoonIcon() {
-	return (
-		<svg
-			aria-hidden="true"
-			width="15"
-			height="15"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="currentColor"
-			strokeWidth="2"
-			strokeLinecap="round"
-		>
-			<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-		</svg>
-	);
-}
+import { useTheme } from "@/contexts/ThemeContext";
+import { useScrollSpy } from "@/hooks/useScrollSpy";
+import { MoonIcon, SunIcon } from "@/assets";
+import { GITHUB_URL, links } from "@/constants";
 
 export function Nav() {
-	const { t, i18n } = useTranslation();
+	const { i18n } = useTranslation();
 	const { theme, toggleTheme } = useTheme();
 	const active = useScrollSpy();
 	const [scrolled, setScrolled] = useState(false);
@@ -61,13 +19,6 @@ export function Nav() {
 	}, []);
 
 	const isLight = theme === "light";
-
-	const links = [
-		{ id: "projetos", href: "#projetos", label: t("nav.projects") },
-		{ id: "experiencia", href: "#experiencia", label: t("nav.experience") },
-		{ id: "skills", href: "#skills", label: t("nav.skills") },
-		{ id: "contato", href: "#contato", label: t("nav.contact") },
-	];
 
 	const toggleLang = () => {
 		const next = i18n.language === "pt" ? "en" : "pt";
@@ -85,19 +36,17 @@ export function Nav() {
 					: "bg-transparent border-transparent"
 			}`}
 		>
-			{/* Logo */}
 			<a
 				href="#home"
 				className="font-mono text-[15px] font-semibold tracking-[-0.02em] text-text"
 			>
 				<span className="text-text-3">&lt;</span>
-				<span className="text-accent">thomas</span>
+				<span className="text-accent">thomasfarias.dev</span>
 				<span className="text-text-3">/&gt;</span>
 			</a>
 
 			<div className="flex-1" />
 
-			{/* Nav links */}
 			<div className="flex items-center gap-7 mr-6 max-[700px]:hidden">
 				{links.map((l) => {
 					const isActive = active === l.id;
@@ -126,9 +75,7 @@ export function Nav() {
 				})}
 			</div>
 
-			{/* Controls */}
 			<div className="flex items-center gap-2">
-				{/* Theme toggle */}
 				<motion.button
 					type="button"
 					onClick={toggleTheme}
@@ -139,7 +86,6 @@ export function Nav() {
 					{isLight ? <MoonIcon /> : <SunIcon />}
 				</motion.button>
 
-				{/* Language toggle */}
 				<div className="flex rounded-lg overflow-hidden border border-border shrink-0">
 					{(["pt", "en"] as const).map((l) => (
 						<button

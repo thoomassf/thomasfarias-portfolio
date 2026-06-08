@@ -7,7 +7,7 @@ export const COMPANY_PROJECTS: CompanyProject[] = [
 		company: "Sempre IT",
 		description: {
 			pt: "Plataforma low code de automação de testes via Inteligência Artificial, reativada após 2 anos parada.",
-			en: "Low code platform for AI-powered test automation, reactivated after 2 years on hold.",
+			en: "Low-code test automation platform powered by Artificial Intelligence, reactivated after 2 years of inactivity",
 		},
 		highlights: {
 			pt: [
@@ -23,13 +23,14 @@ export const COMPANY_PROJECTS: CompanyProject[] = [
 		},
 		stack: [
 			"Next.js",
+			"React Query",
 			"TypeScript",
 			"Django",
 			"Python",
 			"Azure DevOps",
 			"GitFlow",
 		],
-		link: null,
+		link: "https://redwolfai.com.br/",
 	},
 	{
 		id: "teajudo",
@@ -37,7 +38,7 @@ export const COMPANY_PROJECTS: CompanyProject[] = [
 		company: "TEAjudo Healthtech",
 		description: {
 			pt: "Startup de gestão da linha de cuidado para TEA (Transtorno do Espectro Autista) — do MVP ao mercado.",
-			en: "ASD care management startup — from MVP to market, contracted by major health cooperatives.",
+			en: "Healthtech startup focused on care pathway management for ASD (Autism Spectrum Disorder) — from MVP to market.",
 		},
 		highlights: {
 			pt: [
@@ -53,6 +54,8 @@ export const COMPANY_PROJECTS: CompanyProject[] = [
 		},
 		stack: [
 			"Next.js",
+			"React Query",
+			"TailwindCSS",
 			"TypeScript",
 			"Django",
 			"AWS",
@@ -61,5 +64,43 @@ export const COMPANY_PROJECTS: CompanyProject[] = [
 			"Vitest",
 		],
 		link: "https://teajudo.tech",
+	},
+	{
+		id: "freelancer",
+		name: "CRM Integrity",
+		company: "Freelancer",
+		description: {
+			pt: "Plataforma de CRM de funil de vendas para corretores de plano de saúde",
+			en: "Sales funnel CRM platform for health insurance brokers.",
+		},
+		highlights: {
+			pt: [
+				"Arquitetura SaaS Multi-tenant",
+				"Front-end React + back-end: Node.js",
+				"Infraestrutura na AWS",
+				"CI/CD automatizado com GitHub Actions",
+			],
+			en: [
+				"Multi-tenant SaaS Architecture",
+				"React front-end + back-end: Node.js",
+				"AWS Infrastructure",
+				"Automated CI/CD with GitHub Actions",
+			],
+		},
+		stack: [
+			"React.js",
+			"React Router",
+			"React Query",
+			"Node.js",
+			"Fastify",
+			"Zod",
+			"TailwindCss",
+			"Vitest",
+			"AWS",
+			"Github Actions",
+			"Docker",
+			"PostgreSQL",
+		],
+		link: null,
 	},
 ];

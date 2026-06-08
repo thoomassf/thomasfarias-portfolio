@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
+import type React from "react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 interface ContactCardData {
 	key: "linkedin" | "github" | "whatsapp";
-	icon: string;
+	icon: React.ReactNode;
 	handle: string;
 	href: string;
 	accentColor: string;
@@ -37,10 +38,11 @@ export function ContactCard({ card }: ContactCardProps) {
 			<motion.div
 				animate={{ scale: hovered ? 1.08 : 1 }}
 				transition={{ duration: 0.2 }}
-				className="size-11 rounded-xl flex items-center justify-center text-[20px]"
+				className="size-11 rounded-xl flex items-center justify-center"
 				style={{
 					background: card.accentDim,
 					border: `1px solid ${card.accentColor}33`,
+					color: card.accentColor,
 				}}
 			>
 				{card.icon}

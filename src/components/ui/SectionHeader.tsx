@@ -15,7 +15,9 @@ export function SectionHeader({
 }: SectionHeaderProps) {
 	return (
 		<ScrollReveal className={`mb-[60px]${centered ? " text-center" : ""}`}>
-			<span className="section-mono">{label}</span>
+			<span className="font-mono text-xs text-text-3 uppercase block mb-3">
+				{label}
+			</span>
 			<h2 className="section-title">{title}</h2>
 			<p className={`section-sub${centered ? " mx-auto" : ""}`}>{subtitle}</p>
 		</ScrollReveal>

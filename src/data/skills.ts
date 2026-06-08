@@ -1,11 +1,13 @@
 export const SKILLS: Record<string, string[]> = {
 	"Front-end": [
 		"React.js",
-		"Next.js 12–14",
+		"Angular",
+		"Next.js",
 		"TypeScript",
 		"TailwindCSS",
 		"Chakra UI",
 		"Material UI",
+		"TailwindCSS",
 		"React Query",
 		"React Router",
 		"Micro Frontends",
@@ -14,6 +16,7 @@ export const SKILLS: Record<string, string[]> = {
 	"Back-end & APIs": [
 		"Django",
 		"FastAPI",
+		"Flask",
 		"Node.js",
 		"NestJS",
 		"Fastify",
@@ -25,16 +28,14 @@ export const SKILLS: Record<string, string[]> = {
 	],
 	"DevOps & Cloud": [
 		"Docker",
-		"AWS EC2",
-		"AWS S3",
-		"AWS IAM",
+		"AWS",
 		"GitHub Actions",
 		"GitLab CI/CD",
 		"Azure DevOps",
 		"GitFlow",
 		"Pulumi",
 	],
-	Testes: ["Cypress", "Vitest", "Jest", "React Testing Library"],
+	Testes: ["Cypress", "Vitest", "Jest", "React Testing Library", "Pytest"],
 	"Bancos de Dados": ["PostgreSQL", "MySQL", "MongoDB"],
 };
 

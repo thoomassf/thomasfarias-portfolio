@@ -23,13 +23,11 @@ export function Hero() {
 		<section id="home" className="min-h-screen flex items-center relative">
 			<div className="w-full pt-20 px-10 pb-15 max-[768px]:pt-25 max-[768px]:px-5">
 				<div className="grid grid-cols-2 gap-20 items-center w-full max-[900px]:grid-cols-1 max-[900px]:gap-11">
-					{/* Left column */}
 					<motion.div
 						variants={containerVariants}
 						initial="hidden"
 						animate="visible"
 					>
-						{/* Available badge */}
 						<motion.div variants={itemVariants}>
 							<div className="inline-flex items-center gap-2 font-mono text-xs text-green bg-green/7 border border-green/18 py-1.25 px-3.5 rounded-full mb-7">
 								<span className="size-1.5 rounded-full bg-green shadow-[0_0_7px_var(--color-green)] shrink-0" />
@@ -37,17 +35,23 @@ export function Hero() {
 							</div>
 						</motion.div>
 
-						{/* Name */}
-						<motion.h1
-							variants={itemVariants}
-							className="text-[clamp(2.5rem,4.8vw,4rem)] font-bold tracking-[-0.04em] leading-[1.04] mb-5"
-						>
-							Thomas Silva
-							<br />
-							<span className="text-text-2">de Farias</span>
-						</motion.h1>
+						<motion.div className="flex gap-6 items-center mb-4">
+							<motion.img
+								src="https://github.com/thoomassf.png"
+								width={200}
+								className="rounded-full border-4 border-accent"
+							/>
 
-						{/* Description */}
+							<motion.h1
+								variants={itemVariants}
+								className="text-[clamp(2.5rem,4.8vw,4rem)] font-bold tracking-[-0.04em] leading-[1.04] mb-5"
+							>
+								Thomas Silva
+								<br />
+								<span className="text-text-2">de Farias</span>
+							</motion.h1>
+						</motion.div>
+
 						<motion.p
 							variants={itemVariants}
 							className="text-[1.05rem] text-text-2 leading-[1.78] mb-10 max-w-92.5"
@@ -55,7 +59,6 @@ export function Hero() {
 							{t("hero.description")}
 						</motion.p>
 
-						{/* CTA buttons */}
 						<motion.div
 							variants={itemVariants}
 							className="flex gap-3 flex-wrap"

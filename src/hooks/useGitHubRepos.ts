@@ -3,7 +3,7 @@ import axios from "axios";
 import type { GitHubRepo } from "../types";
 
 // TODO: Replace with your GitHub username
-const GITHUB_USERNAME = "thomasfarias19";
+const GITHUB_USERNAME = "thoomassf";
 
 interface UseGitHubReposReturn {
 	repos: GitHubRepo[];

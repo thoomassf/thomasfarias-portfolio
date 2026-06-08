@@ -24,7 +24,6 @@ export function Timeline() {
 				/>
 
 				<div ref={ref} style={{ position: "relative" }}>
-					{/* Gradient line */}
 					<div
 						style={{
 							position: "absolute",
@@ -37,7 +36,7 @@ export function Timeline() {
 						}}
 					/>
 
-					<div style={{ display: "flex", flexDirection: "column" }}>
+					<div className="flex flex-col mt-10">
 						{TIMELINE.map((entry, i) => (
 							<TimelineEntry
 								key={`${entry.company}-${i}`}
