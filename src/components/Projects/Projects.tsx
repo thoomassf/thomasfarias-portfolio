@@ -1,20 +1,20 @@
 import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../ui/SectionHeader";
 import { CompanyCard } from "./CompanyCard";
-import { GitHubCard } from "./GitHubCard";
+// import { GitHubCard } from "./GitHubCard";
 import { COMPANY_PROJECTS } from "../../data/companyProjects";
-import { useGitHubRepos } from "../../hooks/useGitHubRepos";
+// import { useGitHubRepos } from "../../hooks/useGitHubRepos";
 import { GITHUB_URL } from "@/constants";
 
-function SkeletonCard() {
-	return (
-		<div className="card flex flex-col gap-3 min-h-30">
-			<div className="h-4 bg-border-light rounded-md w-3/5 animate-pulse" />
-			<div className="h-3 bg-border rounded-md w-[90%] animate-pulse [animation-delay:0.1s]" />
-			<div className="h-3 bg-border rounded-md w-3/4 animate-pulse [animation-delay:0.2s]" />
-		</div>
-	);
-}
+// function SkeletonCard() {
+// 	return (
+// 		<div className="card flex flex-col gap-3 min-h-30">
+// 			<div className="h-4 bg-border-light rounded-md w-3/5 animate-pulse" />
+// 			<div className="h-3 bg-border rounded-md w-[90%] animate-pulse [animation-delay:0.1s]" />
+// 			<div className="h-3 bg-border rounded-md w-3/4 animate-pulse [animation-delay:0.2s]" />
+// 		</div>
+// 	);
+// }
 
 export function Projects() {
 	const { t } = useTranslation();
