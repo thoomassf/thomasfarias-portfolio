@@ -34,10 +34,11 @@ export interface GitHubRepo {
 export interface TimelineEntry {
 	company: string;
 	role: BilingualString;
-	period: string;
-	duration: BilingualString;
+	/** Format: "YYYY-MM" */
+	startDate: string;
+	/** Format: "YYYY-MM", or null when the role is the current one */
+	endDate: string | null;
 	description: BilingualString;
 	bullets: BilingualStringArray;
-	current: boolean;
 	concurrent: boolean;
 }

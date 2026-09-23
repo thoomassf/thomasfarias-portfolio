@@ -2,10 +2,37 @@ import type { TimelineEntry } from "../types";
 
 export const TIMELINE: TimelineEntry[] = [
 	{
+		company: "Luby",
+		role: { pt: "Desenvolvedor FullStack", en: "FullStack Developer" },
+		startDate: "2026-06",
+		endDate: null,
+		description: {
+			pt: "Desenvolvimento de plataforma de microsserviços em Go num domínio financeiro, com arquitetura serverless event-driven na AWS.",
+			en: "Development of a Go microservices platform in a financial domain, with an event-driven serverless architecture on AWS.",
+		},
+		bullets: {
+			pt: [
+				"Desenvolvimento de plataforma de microsserviços em Go (Clean Architecture, Echo, sqlc/PostgreSQL, Redis, wire) num domínio financeiro.",
+				"Arquitetura serverless event-driven na AWS (Lambda, SNS, SQS, DynamoDB, S3, Secrets Manager, API Gateway, Cognito, EKS, KMS, ECR, CloudFront) com Terraform e LocalStack.",
+				"Implementação de observabilidade com OpenTelemetry (traces/metrics/logs, exporters OTLP, métricas customizadas) integrada a Grafana, Jaeger, Loki, Mimir e Elastic APM.",
+				"Frontends em Next.js 15/React e React 19/Vite com TypeScript, TanStack Query, Zustand, Tailwind e testes automatizados.",
+				"CI/CD com GitHub Actions, Docker multi-stage, Helm/Kubernetes, SonarQube e boas práticas de engenharia (Conventional Commits, hooks, lint, testes property-based).",
+			],
+			en: [
+				"Development of a Go microservices platform (Clean Architecture, Echo, sqlc/PostgreSQL, Redis, wire) in a financial domain.",
+				"Event-driven serverless architecture on AWS (Lambda, SNS, SQS, DynamoDB, S3, Secrets Manager, API Gateway, Cognito, EKS, KMS, ECR, CloudFront) with Terraform and LocalStack.",
+				"Implementation of observability with OpenTelemetry (traces/metrics/logs, OTLP exporters, custom metrics) integrated with Grafana, Jaeger, Loki, Mimir, and Elastic APM.",
+				"Frontends in Next.js 15/React and React 19/Vite with TypeScript, TanStack Query, Zustand, Tailwind, and automated testing.",
+				"CI/CD with GitHub Actions, multi-stage Docker, Helm/Kubernetes, SonarQube, and engineering best practices (Conventional Commits, hooks, lint, property-based testing).",
+			],
+		},
+		concurrent: false,
+	},
+	{
 		company: "Magazine Luiza",
 		role: { pt: "Desenvolvedor FullStack Pleno", en: "FullStack Developer" },
-		period: "Jul 2025 – Jun 2026",
-		duration: { pt: "11 meses", en: "11 months" },
+		startDate: "2025-07",
+		endDate: "2026-06",
 		description: {
 			pt: "Atuação na vertical de logistíca do Magalu Entregas",
 			en: "Product engineering at one of Brazil's largest e-commerce platforms.",
@@ -26,7 +53,6 @@ export const TIMELINE: TimelineEntry[] = [
 				"Working with Docker for application containerization, always focused on scalability and performance.",
 			],
 		},
-		current: false,
 		concurrent: false,
 	},
 	{
@@ -35,8 +61,8 @@ export const TIMELINE: TimelineEntry[] = [
 			pt: "Analista de Desenvolvimento Pleno",
 			en: "Full Developer Analysis",
 		},
-		period: "Jun 2024 – Jul 2025",
-		duration: { pt: "1 ano e 1 mês", en: "1 year 1 month" },
+		startDate: "2024-06",
+		endDate: "2025-07",
 		description: {
 			pt: "Produto RedWolf AI — plataforma low code de automação de testes com IA, reativada e adotada pela CVC.",
 			en: "RedWolf AI — low code AI test automation platform, reactivated and adopted by CVC.",
@@ -55,14 +81,13 @@ export const TIMELINE: TimelineEntry[] = [
 				"Agile delivery with a dedicated squad",
 			],
 		},
-		current: false,
 		concurrent: true,
 	},
 	{
 		company: "TEAjudo Healthtech",
 		role: { pt: "Desenvolvedor FullStack", en: "FullStack Developer" },
-		period: "Jul 2024 – Jul 2025",
-		duration: { pt: "1 ano", en: "1 year" },
+		startDate: "2024-07",
+		endDate: "2025-07",
 		description: {
 			pt: "Responsabilidade full stack desde o MVP até a maturidade, com produto em contratos com Unimeds.",
 			en: "Full stack ownership from MVP to market maturity, with product under health cooperative contracts.",
@@ -81,14 +106,13 @@ export const TIMELINE: TimelineEntry[] = [
 				"Testing with Vitest and Cypress",
 			],
 		},
-		current: false,
 		concurrent: true,
 	},
 	{
 		company: "Grupo Unimed SC",
 		role: { pt: "Desenvolvedor FullStack", en: "FullStack Developer" },
-		period: "Set 2022 – Mai 2024",
-		duration: { pt: "1 ano e 8 meses", en: "1 year 8 months" },
+		startDate: "2022-09",
+		endDate: "2024-05",
 		description: {
 			pt: "Desenvolvimento de sistemas internos e plataformas de saúde para uma das maiores cooperativas médicas do Brasil.",
 			en: "Development of internal systems and healthcare platforms for one of Brazil's largest medical cooperatives.",
@@ -105,7 +129,6 @@ export const TIMELINE: TimelineEntry[] = [
 				"Working in Scrum squads with Git/GitHub for version control and CI/CD.",
 			],
 		},
-		current: false,
 		concurrent: false,
 	},
 ];

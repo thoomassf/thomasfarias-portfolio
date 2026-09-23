@@ -2,6 +2,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { Lang, TimelineEntry as TimelineEntryType } from "../../types";
+import {
+	formatDuration,
+	formatPeriod,
+	isCurrentRole,
+} from "../../utils/timelineDate";
 
 interface TimelineEntryProps {
 	entry: TimelineEntryType;
@@ -13,20 +18,19 @@ export function TimelineEntry({ entry, index, inView }: TimelineEntryProps) {
 	const { t, i18n } = useTranslation();
 	const [expanded, setExpanded] = useState(false);
 	const lang = i18n.language as Lang;
+	const current = isCurrentRole(entry.endDate);
 
-	const dotBg = entry.current
+	const dotBg = current
 		? "bg-accent"
 		: entry.concurrent
 			? "bg-[#a78bfa]"
 			: "bg-border-light";
 
-	const dotBorder = entry.current
+	const dotBorder = current
 		? "border-[3px] border-accent/30"
 		: "border-2 border-border-light";
 
-	const dotShadow = entry.current
-		? "shadow-[0_0_12px_rgba(99,102,241,0.5)]"
-		: "";
+	const dotShadow = current ? "shadow-[0_0_12px_rgba(99,102,241,0.5)]" : "";
 
 	return (
 		<motion.div
@@ -63,12 +67,12 @@ export function TimelineEntry({ entry, index, inView }: TimelineEntryProps) {
 							<h3 className="text-[1.05rem] font-bold tracking-tight">
 								{entry.company}
 							</h3>
-							{entry.current && (
+							{current && (
 								<span className="font-mono text-[10px] font-semibold text-accent bg-accent-dim border border-accent/25 py-0.5 px-2.25 rounded-full">
 									{t("timeline.current")}
 								</span>
 							)}
-							{entry.concurrent && !entry.current && (
+							{entry.concurrent && !current && (
 								<span className="font-mono text-[10px] font-semibold text-[#a78bfa] bg-[rgba(167,139,250,0.1)] border border-[rgba(167,139,250,0.2)] py-0.5 px-2.25 rounded-full">
 									{t("timeline.concurrent")}
 								</span>
@@ -81,10 +85,10 @@ export function TimelineEntry({ entry, index, inView }: TimelineEntryProps) {
 
 					<div className="text-right shrink-0">
 						<div className="font-mono text-xs text-text-3 mb-0.5">
-							{entry.period}
+							{formatPeriod(entry.startDate, entry.endDate, lang)}
 						</div>
 						<div className="font-mono text-[11px] text-text-3 opacity-60">
-							{entry.duration[lang]}
+							{formatDuration(entry.startDate, entry.endDate, lang)}
 						</div>
 					</div>
 				</div>
