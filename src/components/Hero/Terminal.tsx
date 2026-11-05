@@ -11,7 +11,7 @@ const SEQ = [
 	{ cmd: "cat role.txt", out: "FullStack Developer", outColor: "#6366f1" },
 	{
 		cmd: "ls experience/",
-		out: "unimed-sc/  teajudo/  sempre-it/  magalu/",
+		out: "unimed-sc/  teajudo/  sempre-it/  magalu/  luby/",
 		outColor: "#8888a0",
 	},
 	{

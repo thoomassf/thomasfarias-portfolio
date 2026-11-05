@@ -3,6 +3,7 @@
 		"projects": "Projects",
 		"experience": "Experience",
 		"skills": "Skills",
+		"education": "Education",
 		"contact": "Contact"
 	},
 	"hero": {
@@ -36,8 +37,16 @@
 		"subtitle": "Technologies I use daily — from front-end to cloud.",
 		"items": "technologies"
 	},
+	"education": {
+		"label": "// 05 — education",
+		"title": "Academic background",
+		"subtitle": "Academic foundation and ongoing studies — from undergrad to ML specialization.",
+		"inProgress": "in progress",
+		"completed": "completed",
+		"expected": "expected"
+	},
 	"contact": {
-		"label": "// 05 — contact",
+		"label": "// 06 — contact",
 		"title": "Let's talk?",
 		"subtitle": "Open to opportunities, freelance projects, and great tech conversations.",
 		"preferEmail": "Prefer to send an email?",

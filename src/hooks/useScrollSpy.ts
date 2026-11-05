@@ -5,6 +5,7 @@ const SECTIONS = [
 	"projetos",
 	"experiencia",
 	"skills",
+	"formacao",
 	"contato",
 ] as const;
 type SectionId = (typeof SECTIONS)[number];

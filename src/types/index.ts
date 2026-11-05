@@ -42,3 +42,19 @@ export interface TimelineEntry {
 	bullets: BilingualStringArray;
 	concurrent: boolean;
 }
+
+export type EducationStatus = "in_progress" | "completed";
+
+export interface EducationEntry {
+	id: string;
+	institution: string;
+	degree: BilingualString;
+	course: BilingualString;
+	/** Format: "YYYY-MM" */
+	startDate: string;
+	/** Format: "YYYY-MM" — expected end date while the program is in progress */
+	endDate: string;
+	status: EducationStatus;
+	description: BilingualString;
+	topics: string[];
+}

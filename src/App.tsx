@@ -1,5 +1,6 @@
 import { I18nextProvider } from "react-i18next";
 import { Contact } from "./components/Contact/Contact";
+import { Education } from "./components/Education/Education";
 import { Hero } from "./components/Hero/Hero";
 import { Nav } from "./components/Nav/Nav";
 import { Projects } from "./components/Projects/Projects";
@@ -18,6 +19,7 @@ export function App() {
 					<Projects />
 					<Timeline />
 					<Skills />
+					<Education />
 					<Contact />
 				</main>
 			</ThemeProvider>

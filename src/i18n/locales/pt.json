@@ -3,6 +3,7 @@
 		"projects": "Projetos",
 		"experience": "Experiência",
 		"skills": "Skills",
+		"education": "Formação",
 		"contact": "Contato"
 	},
 	"hero": {
@@ -36,8 +37,16 @@
 		"subtitle": "Tecnologias que uso no dia a dia — do front-end ao cloud.",
 		"items": "tecnologias"
 	},
+	"education": {
+		"label": "// 05 — formação",
+		"title": "Formação acadêmica",
+		"subtitle": "Base acadêmica e estudos em andamento — da graduação à especialização em ML.",
+		"inProgress": "em andamento",
+		"completed": "concluído",
+		"expected": "previsão"
+	},
 	"contact": {
-		"label": "// 05 — contato",
+		"label": "// 06 — contato",
 		"title": "Vamos conversar?",
 		"subtitle": "Aberto a oportunidades, projetos freelance e boas conversas sobre tecnologia.",
 		"preferEmail": "Prefere enviar um email?",
@@ -49,7 +58,10 @@
 				"label": "LinkedIn",
 				"desc": "Perfil profissional e trajetória"
 			},
-			"github": { "label": "GitHub", "desc": "Repositórios e contribuições" },
+			"github": {
+				"label": "GitHub",
+				"desc": "Repositórios e contribuições"
+			},
 			"whatsapp": {
 				"label": "WhatsApp",
 				"desc": "Resposta rápida para contato"

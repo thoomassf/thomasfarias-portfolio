@@ -6,6 +6,7 @@ export const links = [
 	{ id: "projetos", href: "#projetos", label: t("nav.projects") },
 	{ id: "experiencia", href: "#experiencia", label: t("nav.experience") },
 	{ id: "skills", href: "#skills", label: t("nav.skills") },
+	{ id: "formacao", href: "#formacao", label: t("nav.education") },
 	{ id: "contato", href: "#contato", label: t("nav.contact") },
 ];
 
